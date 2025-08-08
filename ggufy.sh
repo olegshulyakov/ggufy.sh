@@ -3,15 +3,15 @@
 # Shortcut for quantizing HF models using named parameters and short options
 #
 # Usage with long options:
-#   ./hf-quantize.sh --model meta-llama/Llama-2-7b --quant-method Q4_K_M
-#   ./hf-quantize.sh --model meta-llama/Llama-2-7b --quant-method Q4_K_M --use-imatrix
-#   ./hf-quantize.sh --model meta-llama/Llama-2-7b --quant-method Q4_K_M --use-imatrix --output-filename Llama-2-7b-Q4_K_M.gguf
-#   ./hf-quantize.sh --model meta-llama/Llama-2-7b --quant-method Q4_K_M --use-imatrix --output-filename Llama-2-7b-Q4_K_M.gguf --split-model --split-max-tensors 256 --split-max-size 4G
+#   ./ggufy.sh --model meta-llama/Llama-2-7b --quant-method Q4_K_M
+#   ./ggufy.sh --model meta-llama/Llama-2-7b --quant-method Q4_K_M --use-imatrix
+#   ./ggufy.sh --model meta-llama/Llama-2-7b --quant-method Q4_K_M --use-imatrix --output-filename Llama-2-7b-Q4_K_M.gguf
+#   ./ggufy.sh --model meta-llama/Llama-2-7b --quant-method Q4_K_M --use-imatrix --output-filename Llama-2-7b-Q4_K_M.gguf --split-model --split-max-tensors 256 --split-max-size 4G
 #
-#   ./hf-quantize.sh -m meta-llama/Llama-2-7b -q Q4_K_M
-#   ./hf-quantize.sh -m meta-llama/Llama-2-7b -q Q4_K_M -imatrix
-#   ./hf-quantize.sh -m meta-llama/Llama-2-7b -q Q4_K_M -imatrix -o Llama-2-7b-Q4_K_M.gguf
-#   ./hf-quantize.sh -m meta-llama/Llama-2-7b -q Q4_K_M -imatrix -o Llama-2-7b-Q4_K_M.gguf -split --split-max-tensors 256 --split-max-size 4G
+#   ./ggufy.sh -m meta-llama/Llama-2-7b -q Q4_K_M
+#   ./ggufy.sh -m meta-llama/Llama-2-7b -q Q4_K_M -imatrix
+#   ./ggufy.sh -m meta-llama/Llama-2-7b -q Q4_K_M -imatrix -o Llama-2-7b-Q4_K_M.gguf
+#   ./ggufy.sh -m meta-llama/Llama-2-7b -q Q4_K_M -imatrix -o Llama-2-7b-Q4_K_M.gguf -split --split-max-tensors 256 --split-max-size 4G
 #
 
 # --- Configuration ---
